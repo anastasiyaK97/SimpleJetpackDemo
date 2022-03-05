@@ -27,9 +27,6 @@ object Libs {
             const val tooling = "androidx.compose.ui:ui-tooling:${version}"
             const val toolingPreview = "androidx.compose.ui:ui-tooling-preview:${version}"
             const val iconsExtended = "androidx.compose.material:material-icons-extended:$version"
-
-            const val animationCore = "androidx.compose.animation.core:$version"
-            const val animation = "androidx.compose.animation:animation:$version"
         }
 
         object Activity {
