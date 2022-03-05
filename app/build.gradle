@@ -58,8 +58,6 @@ dependencies {
     implementation Libs.AndroidX.Compose.runtime
     implementation Libs.AndroidX.Compose.iconsExtended
     implementation Libs.AndroidX.Compose.liveData
-    /*implementation Libs.AndroidX.Compose.animation
-    implementation Libs.AndroidX.Compose.animationCore*/
 
     implementation Libs.AndroidX.Navigation.navigationCompose
 
