@@ -1,0 +1,75 @@
+import com.example.petshopjetpackdemo.buildsrc.Libs
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.example.petshopjetpackdemo"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables {
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion compose_version
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+}
+
+dependencies {
+
+    implementation Libs.AndroidX.coreKtx
+    implementation Libs.AndroidX.Activity.activityCompose
+    implementation Libs.AndroidX.Lifecycle.viewModelCompose
+    implementation Libs.AndroidX.Compose.ui
+    implementation Libs.AndroidX.Compose.toolingPreview
+    implementation Libs.AndroidX.Compose.material
+    implementation Libs.AndroidX.Compose.runtime
+    implementation Libs.AndroidX.Compose.iconsExtended
+    implementation Libs.AndroidX.Compose.liveData
+    /*implementation Libs.AndroidX.Compose.animation
+    implementation Libs.AndroidX.Compose.animationCore*/
+
+    implementation Libs.AndroidX.Navigation.navigationCompose
+
+    implementation Libs.AndroidX.ConstraintLayout.constraintLayoutCompose
+
+    implementation Libs.Accompanist.insets
+    implementation Libs.Accompanist.systemuicontroller
+    implementation Libs.Accompanist.flowlayouts
+
+    implementation Libs.Coil.coilCompose
+
+    debugImplementation Libs.AndroidX.Compose.ui
+}

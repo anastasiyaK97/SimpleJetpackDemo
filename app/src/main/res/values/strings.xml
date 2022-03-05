@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Petshop JetpackDemo</string>
+
+    <string name="bottom_bar_catalog_title">Каталог</string>
+    <string name="bottom_bar_cart_title">Корзина</string>
+    <string name="bottom_bar_auto_order_title">Автозаказы</string>
+    <string name="bottom_bar_more_title">Ещё</string>
+
+    <string name="top_bar_personal_account_title">Личный кабинет</string>
+    <string name="profile_my_orders_button_title">Мои заказы</string>
+    <string name="profile_my_information_button_title">Мои данные</string>
+    <string name="orders_empty_title">Каким будет ваш первый заказ?</string>
+    <string name="orders_empty_button_title">Вперёд, за покупками!</string>
+
+</resources>
