@@ -17,7 +17,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintLayout
 import androidx.constraintlayout.compose.Dimension
-import me.krasnova.common.ui.theme.TopBarBackground
+import me.krasnova.common.theme.TopBarBackground
 import com.google.accompanist.insets.statusBarsPadding
 import me.krasnova.common.R
 
