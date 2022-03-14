@@ -13,8 +13,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import me.krasnova.common.R
-import me.krasnova.common.ui.theme.BlueLinkText
-import me.krasnova.common.ui.theme.montserratFontFamily
+import me.krasnova.common.theme.BlueLinkText
+import me.krasnova.common.theme.Fonts
 
 @Composable
 fun PreviousTitle(text: String, onClickAction: () -> Unit) {
@@ -27,7 +27,7 @@ fun PreviousTitle(text: String, onClickAction: () -> Unit) {
         Icon(painter = painterResource(id = R.drawable.icon_arrow_back_blue), contentDescription = null, tint = BlueLinkText)
         Text(
             text = text,
-            fontFamily = montserratFontFamily,
+            fontFamily = Fonts.montserrat(),
             fontWeight = FontWeight.SemiBold,
             fontSize = 13.sp,
             color = BlueLinkText,

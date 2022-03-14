@@ -6,8 +6,8 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import me.krasnova.common.ui.screen.Profile.ProfileScreen
-import me.krasnova.common.ui.screen.ProfileSection.ProfileSectionScreen
+import me.krasnova.common.ui.screen.profile.ProfileScreen
+import me.krasnova.common.ui.screen.profileSection.ProfileSectionScreen
 
 @Composable
 fun Navigation(navController: NavHostController) {

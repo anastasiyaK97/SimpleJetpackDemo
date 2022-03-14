@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import com.google.accompanist.insets.ProvideWindowInsets
+import com.google.accompanist.insets.navigationBarsPadding
 import me.krasnova.common.ui.components.BottomNavigationBar
 import me.krasnova.common.ui.components.PetshopScaffold
 import me.krasnova.common.ui.components.TopBar

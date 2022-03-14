@@ -7,6 +7,8 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import me.krasnova.common.R
+import me.krasnova.common.theme.BlackText
+import me.krasnova.common.theme.GreyText
 
 val Typography = Typography(
     body1 = TextStyle(
@@ -29,14 +31,4 @@ val Typography = Typography(
         fontSize = 15.sp,
         color = BlackText
     )
-)
-
-val montserratFontFamily = FontFamily(
-    Font(R.font.montserrat_semi_bold, FontWeight.SemiBold),
-    Font(R.font.montserrat_bold, FontWeight.Bold)
-)
-
-val robotoFontFamily = FontFamily(
-    Font(R.font.roboto_regular, FontWeight.Normal),
-    Font(R.font.roboto_medium, FontWeight.Medium)
 )

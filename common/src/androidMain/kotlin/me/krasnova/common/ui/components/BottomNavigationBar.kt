@@ -1,7 +1,5 @@
 package me.krasnova.common.ui.components
 
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -20,11 +18,12 @@ import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import me.krasnova.common.ui.theme.InactiveGreyIcon
+import me.krasnova.common.theme.InactiveGreyIcon
 import me.krasnova.common.ui.theme.PetshopTheme
-import me.krasnova.common.ui.theme.White
+import me.krasnova.common.theme.White
 import com.google.accompanist.insets.navigationBarsPadding
-import me.krasnova.common.R
+import me.krasnova.common.ui.BottomBarIcon
+import me.krasnova.common.ui.BottomBarItems
 
 @Composable
 fun BottomNavigationBar(
@@ -50,13 +49,13 @@ fun BottomNavigationBar(
                 BottomNavigationItem(
                     icon = {
                         BottomBarIcon(
-                            iconResourceId = item.icon,
-                            titleResourceId = item.title
+                            iconResource = item.iconRes,
+                            title = item.title
                         )
                     },
                     label = {
                         Text(
-                            text = stringResource(item.title),
+                            text = item.title,
                             color = InactiveGreyIcon,
                             style = MaterialTheme.typography.body2,
                             maxLines = 1
@@ -71,17 +70,6 @@ fun BottomNavigationBar(
             }
         }
     }
-}
-
-enum class BottomBarItems(
-    @StringRes val title: Int,
-    @DrawableRes val icon: Int,
-    val route: String
-) {
-    CATALOG(R.string.bottom_bar_catalog_title, R.drawable.icon_catalog, "main/catalog"),
-    AUTO_ORDER(R.string.bottom_bar_auto_order_title, R.drawable.icon_autoorder, "main/autoOrder"),
-    CART(R.string.bottom_bar_cart_title, R.drawable.icon_cart, "main/cart"),
-    MORE(R.string.bottom_bar_more_title, R.drawable.icon_more, "main/more")
 }
 
 private val BottomNavHeight = 56.dp

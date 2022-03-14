@@ -1,4 +1,5 @@
 import org.jetbrains.compose.compose
+import com.example.petshopjetpackdemo.buildsrc.Libs
 
 plugins {
     kotlin("multiplatform")
@@ -26,33 +27,33 @@ kotlin {
         }
         val androidMain by getting {
             dependencies {
-                api("androidx.appcompat:appcompat:1.2.0")
-                api("androidx.core:core-ktx:1.3.1")
+                api(Libs.AndroidX.appcompat)
+                api(Libs.AndroidX.coreKtx)
 
-                api("androidx.core:core-ktx:1.7.0")
-                api("androidx.activity:activity-compose:1.4.0")
-                api("androidx.lifecycle:lifecycle-viewmodel-compose:2.4.0")
-                api("androidx.compose.ui:ui:1.1.0")
-                api("androidx.compose.ui:ui-tooling-preview:1.1.0")
-                api("androidx.compose.material:material:1.1.0")
-                api("androidx.compose.runtime:runtime:1.1.0")
-                api("androidx.compose.material:material-icons-extended:1.1.0")
-                api("androidx.compose.runtime:runtime-livedata:1.1.0")
+                api(Libs.AndroidX.Activity.activityCompose)
+                api(Libs.AndroidX.Lifecycle.viewModelCompose)
+                api(Libs.AndroidX.Compose.ui)
+                api(Libs.AndroidX.Compose.toolingPreview)
+                api(Libs.AndroidX.Compose.material)
+                api(Libs.AndroidX.Compose.runtime)
+                api(Libs.AndroidX.Compose.iconsExtended)
+                api(Libs.AndroidX.Compose.liveData)
 
-                api("androidx.navigation:navigation-compose:2.4.0")
+                api(Libs.AndroidX.Navigation.navigationCompose)
 
-                api( "androidx.constraintlayout:constraintlayout-compose:1.0.0")
+                api(Libs.AndroidX.ConstraintLayout.constraintLayoutCompose)
 
-                api("com.google.accompanist:accompanist-insets:0.23.0")
-                api("com.google.accompanist:accompanist-systemuicontroller:0.23.0")
-                api("com.google.accompanist:accompanist-flowlayout:0.23.0")
+                api(Libs.Accompanist.insets)
+                api(Libs.Accompanist.systemuicontroller)
+                api(Libs.Accompanist.flowlayouts)
 
-                api("io.coil-kt:coil-compose:1.4.0")
+                api(Libs.Coil.coilCompose)
             }
         }
         val desktopMain by getting {
             dependencies {
                 api(compose.preview)
+                api(compose.desktop.common)
             }
         }
     }

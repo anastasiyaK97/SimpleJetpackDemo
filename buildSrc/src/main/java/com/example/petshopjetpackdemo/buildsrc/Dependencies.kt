@@ -16,6 +16,7 @@ object Libs {
 
     object AndroidX {
         const val coreKtx = "androidx.core:core-ktx:1.7.0"
+        const val appcompat = "androidx.appcompat:appcompat:1.2.0"
 
         object Compose {
             const val version = "1.1.0"
